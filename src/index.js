@@ -4,10 +4,45 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// Styletron
+import { Provider as StyletronProvider, DebugEngine } from 'styletron-react';
+import { Client as Styletron } from 'styletron-engine-atomic';
+
+// Atomize
+import { ThemeProvider, StyleReset } from 'atomize';
+
+// --------- Website ---------
+// Setting Custom Theme
+const theme = {
+  colors: {
+    teal: '#2D93AD',
+    pink: '#EF959C',
+    lime: '#CFF27E',
+    light: '#FCFBF7',
+    dark: '#080F0F',
+  },
+
+  fontFamily: {
+    primary: "Inconsolata, 'Noto Serif', 'Noto Serif Display'",
+    secondary: 'Inconsolata',
+    code: 'Inconsolata',
+  },
+};
+// Setting the Website
+const debug =
+  process.env.NODE_ENV === 'production' ? void 0 : new DebugEngine();
+
+const engine = new Styletron();
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <StyletronProvider value={engine} debug={debug} debugAfterHydration>
+      <StyleReset />
+      <ThemeProvider theme={theme}>
+        <App />
+      </ThemeProvider>
+    </StyletronProvider>
   </React.StrictMode>
 );
 
