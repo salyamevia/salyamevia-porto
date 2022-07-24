@@ -16,16 +16,16 @@ import { ThemeProvider, StyleReset } from 'atomize';
 const theme = {
   colors: {
     teal: '#2D93AD',
-    pink: '#EF959C',
+    pink: '#FF6B6C',
     lime: '#CFF27E',
     light: '#FCFBF7',
     dark: '#080F0F',
   },
 
   fontFamily: {
-    primary: "Inconsolata, 'Noto Serif', 'Noto Serif Display'",
-    secondary: 'Inconsolata',
-    code: 'Inconsolata',
+    primary: 'Inconsolata',
+    display: 'Noto Serif Display',
+    heading: 'Noto Serif',
   },
 };
 // Setting the Website

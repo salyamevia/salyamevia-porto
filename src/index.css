@@ -1,9 +1,18 @@
 /* Custom Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500;600&family=Noto+Serif+Display:ital,wght@0,600;1,600&family=Noto+Serif:wght@700&display=swap');
 
-body {
+html,
+body,
+#root,
+#root > div {
   margin: 0;
+  height: 100%;
+}
+
+body {
   font-family: 'Inconsolata', 'Noto Serif', 'Noto Serif Display', serif !important;
+  background-color: #fcfbf7;
+  color: '#080F0F';
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
