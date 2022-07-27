@@ -3,13 +3,13 @@ import { Div, Text, Button, Icon } from 'atomize';
 
 import Navbar from '../Components/Navbar.js';
 
-function AboutMe() {
+function Portfolio() {
   return (
     <>
       <Navbar />
-      HIH HAH
+      HUPLA HUPLA
     </>
   );
 }
 
-export default AboutMe;
+export default Portfolio;

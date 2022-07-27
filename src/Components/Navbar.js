@@ -1,5 +1,7 @@
 import React, { Component, useState } from 'react';
 import { Div, Button, Icon, SideDrawer, Text } from 'atomize';
+import { Link } from 'react-router-dom';
+
 import logo from '../Image/logo.svg';
 import linkedin from '../Image/linkedin.svg';
 import medium from '../Image/medium.svg';
@@ -10,28 +12,32 @@ const BasicSideDrawer = ({ isOpen, onClose }) => {
   return (
     <SideDrawer isOpen={isOpen} onClose={onClose}>
       <Div d="flex" m={{ b: '4rem' }} flexDir="column" align="center">
-        <Button
-          h="7em"
-          p={{ x: '1.25rem' }}
-          textSize="body"
-          textColor="dark"
-          textWeight="600"
-          bg="none"
-          m={{ r: '0.5rem' }}
-        >
-          About Me
-        </Button>
-        <Button
-          h="7em"
-          p={{ x: '1.25rem' }}
-          textSize="body"
-          textColor="dark"
-          textWeight="600"
-          bg="none"
-          m={{ r: '0.5rem' }}
-        >
-          Projects
-        </Button>
+        <Link to="/about">
+          <Button
+            h="7em"
+            p={{ x: '1.25rem' }}
+            textSize="body"
+            textColor="dark"
+            textWeight="600"
+            bg="none"
+            m={{ r: '0.5rem' }}
+          >
+            About Me
+          </Button>
+        </Link>
+        <Link to="/portfolio">
+          <Button
+            h="7em"
+            p={{ x: '1.25rem' }}
+            textSize="body"
+            textColor="dark"
+            textWeight="600"
+            bg="none"
+            m={{ r: '0.5rem' }}
+          >
+            Projects
+          </Button>
+        </Link>
         <Div d="flex">
           <a
             href="https://www.linkedin.com/in/shaffira-alya-mevia/"
@@ -93,9 +99,11 @@ function Navbar() {
   return (
     <Div d="flex" justify="space-between" p={{ x: '3rem', y: '2rem' }}>
       <Div>
-        <Button h="3rem" bg="none">
-          <img src={logo} alt="logo" />
-        </Button>
+        <Link to="/">
+          <Button h="3rem" bg="none">
+            <img src={logo} alt="logo" />
+          </Button>
+        </Link>
       </Div>
 
       {/* Mobile */}
@@ -111,29 +119,33 @@ function Navbar() {
 
       {/* Desktop */}
       <Div d={{ xs: 'none', sm: 'none', md: 'flex' }}>
-        <Button
-          h="3rem"
-          p={{ x: '1.25rem' }}
-          textSize="body"
-          textColor="dark"
-          textWeight="600"
-          bg="none"
-          m={{ r: '0.5rem' }}
-        >
-          About Me
-        </Button>
+        <Link to="/about">
+          <Button
+            h="3rem"
+            p={{ x: '1.25rem' }}
+            textSize="body"
+            textColor="dark"
+            textWeight="600"
+            bg="none"
+            m={{ r: '0.5rem' }}
+          >
+            About Me
+          </Button>
+        </Link>
 
-        <Button
-          h="3rem"
-          p={{ x: '1.25rem' }}
-          textSize="body"
-          textColor="dark"
-          textWeight="600"
-          bg="none"
-          m={{ r: '0.5rem' }}
-        >
-          Projects
-        </Button>
+        <Link to="/portfolio">
+          <Button
+            h="3rem"
+            p={{ x: '1.25rem' }}
+            textSize="body"
+            textColor="dark"
+            textWeight="600"
+            bg="none"
+            m={{ r: '0.5rem' }}
+          >
+            Projects
+          </Button>
+        </Link>
 
         <a
           href="https://www.linkedin.com/in/shaffira-alya-mevia/"

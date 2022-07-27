@@ -44,39 +44,52 @@ function Landing() {
           Computer Science student in Institut Teknologi Bandung (*^ - ^*)/
         </Text>
         <Div d="flex" flexDir="row">
-          <Button
-            h="3rem"
-            prefix={
-              <Icon name="Email" size="16px" color="teal" m={{ r: '0.5rem' }} />
-            }
-            bg="none"
-            border="1px solid"
-            borderColor="teal"
-            textColor="teal"
-            hoverBg="lightteal"
-            m={{ r: '0.5rem' }}
+          <a href="mailto:me@salyamevia.com" target="_blank" rel="noreferrer">
+            <Button
+              h="3rem"
+              prefix={
+                <Icon
+                  name="Email"
+                  size="16px"
+                  color="teal"
+                  m={{ r: '0.5rem' }}
+                />
+              }
+              bg="none"
+              border="1px solid"
+              borderColor="teal"
+              textColor="teal"
+              hoverBg="lightteal"
+              m={{ r: '0.5rem' }}
+            >
+              Contact Me
+            </Button>
+          </a>
+          <a
+            href="https://drive.google.com/file/d/1JCLYQVVXtipBOAQcmU47eH3_6SLN1igi/view?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
           >
-            Contact Me
-          </Button>
-          <Button
-            h="3rem"
-            prefix={
-              <Icon
-                name="Folder"
-                size="16px"
-                color="teal"
-                m={{ r: '0.5rem' }}
-              />
-            }
-            bg="none"
-            border="1px solid"
-            borderColor="teal"
-            textColor="teal"
-            hoverBg="lightteal"
-            m={{ r: '0.5rem' }}
-          >
-            Resume
-          </Button>
+            <Button
+              h="3rem"
+              prefix={
+                <Icon
+                  name="Folder"
+                  size="16px"
+                  color="teal"
+                  m={{ r: '0.5rem' }}
+                />
+              }
+              bg="none"
+              border="1px solid"
+              borderColor="teal"
+              textColor="teal"
+              hoverBg="lightteal"
+              m={{ r: '0.5rem' }}
+            >
+              Resume
+            </Button>
+          </a>
         </Div>
       </Div>
     </Div>
