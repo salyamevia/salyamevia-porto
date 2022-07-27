@@ -20,6 +20,7 @@ const theme = {
     lime: '#CFF27E',
     light: '#FCFBF7',
     dark: '#080F0F',
+    lightteal: '#D8E9EA',
   },
 
   fontFamily: {

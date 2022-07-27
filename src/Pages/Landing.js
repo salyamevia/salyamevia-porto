@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Div, Text } from 'atomize';
+import { Div, Text, Button, Icon } from 'atomize';
 
 import background from '../Image/bg.png';
 import Navbar from '../Components/Navbar.js';
@@ -43,6 +43,41 @@ function Landing() {
           I am also a traditional media artist, polyglot, and a final year
           Computer Science student in Institut Teknologi Bandung (*^ - ^*)/
         </Text>
+        <Div d="flex" flexDir="row">
+          <Button
+            h="3rem"
+            prefix={
+              <Icon name="Email" size="16px" color="teal" m={{ r: '0.5rem' }} />
+            }
+            bg="none"
+            border="1px solid"
+            borderColor="teal"
+            textColor="teal"
+            hoverBg="lightteal"
+            m={{ r: '0.5rem' }}
+          >
+            Contact Me
+          </Button>
+          <Button
+            h="3rem"
+            prefix={
+              <Icon
+                name="Folder"
+                size="16px"
+                color="teal"
+                m={{ r: '0.5rem' }}
+              />
+            }
+            bg="none"
+            border="1px solid"
+            borderColor="teal"
+            textColor="teal"
+            hoverBg="lightteal"
+            m={{ r: '0.5rem' }}
+          >
+            Resume
+          </Button>
+        </Div>
       </Div>
     </Div>
   );
