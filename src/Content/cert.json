@@ -2,13 +2,13 @@
   {
     "role": "TensorFlow Developer Certificate",
     "place": "TensorFlow",
-    "placelink": "",
+    "placelink": "https://www.tensorflow.org/certificate",
     "duration": "2022"
   },
   {
     "role": "Data Scientist with Python Track",
     "place": "DataCamp",
-    "placelink": "",
+    "placelink": "https://www.datacamp.com/statement-of-accomplishment/track/9f7c1300d1f403870c380a728b5afe0325fb344d",
     "duration": "2022"
   }
 ]

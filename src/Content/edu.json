@@ -2,13 +2,13 @@
   {
     "role": "Computer Science",
     "place": "Institut Teknologi Bandung",
-    "placelink": "",
+    "placelink": "https://itb.ac.id/",
     "duration": "2019 - 2023 (Expected)"
   },
   {
     "role": "Machine Learning Student",
     "place": "Bangkit Academy",
-    "placelink": "",
+    "placelink": "https://grow.google/intl/id_id/bangkit/",
     "duration": "2022"
   }
 ]

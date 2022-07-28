@@ -25,7 +25,7 @@ function Portfolio() {
               m={{ y: '2rem', b: { xs: '3rem', sm: '0px' } }}
               maxW="45em"
             >
-              This are some of the curated projects that I have done and would
+              These are some of the curated projects that I have done and would
               like to share it with everyone ヾ(•ω•`)o
             </Text>
           </Div>
