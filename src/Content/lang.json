@@ -1,5 +1,6 @@
 {
   "fluent": ["Bahasa Indonesia", "English"],
   "intermediate": ["Japanese"],
-  "basic": ["Korean", "Deutsch", "Javanese", "Sundanese"]
+  "basic": ["Korean", "Deutsch", "Javanese", "Sundanese"],
+  "fluent on certain conditions": ["Common", "Elvish", "Draconic"]
 }
