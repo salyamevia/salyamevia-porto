@@ -21,3 +21,27 @@ body {
 code {
   font-family: 'Inconsolata', monospace !important;
 }
+
+.gridContainter {
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 540px) {
+  .gridContainter {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 720px) {
+  .gridContainter {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 960px) {
+  .gridContainter {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media (min-width: 1156px) {
+  .gridContainter {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
